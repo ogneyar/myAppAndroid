@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">myAppAndroid</string>
+    <string name="startText">обро пожаловать!</string>	
+    <string name="centerText">А ну затести кнопку!</string>
+    <string name="cnangeActive">Нажми!</string>
+</resources>
