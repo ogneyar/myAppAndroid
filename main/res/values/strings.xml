@@ -8,5 +8,6 @@
     <string name="nextActivity"><![CDATA[Далее >>]]></string>
 
     <string name="title_activity_second">SecondActivity</string>
+    <string name="exit_btn">Выход</string>
 
 </resources>
