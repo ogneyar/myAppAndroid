@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">myAppAndroid</string>
-    <string name="startText">обро пожаловать!</string>	
+    <string name="title_activity_main">myAppAndroid</string>
+
+    <string name="startText">Добро пожаловать!</string>
     <string name="centerText">А ну затести кнопку!</string>
-    <string name="cnangeActive">Нажми!</string>
+    <string name="changeText">Нажми!</string>
+    <string name="nextActivity"><![CDATA[Далее >>]]></string>
+
+    <string name="title_activity_second">SecondActivity</string>
+
 </resources>
