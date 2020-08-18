@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,28 +27,24 @@ public class MainActivity extends AppCompatActivity {
         nextActivity = findViewById(R.id.nextActivity);
 
         addListenerOnButton();
+
+        if (getIntent().getBooleanExtra("EXIT", false)) { finish(); }
     }
 
     public void onChangeText(View view){
         CharSequence text = textViewSecond.getText();
 
         if (text == "Прикинь, кнопка теперь работает)))") {
-            textViewSecond.setText("А ну-ка снова нажми!!!");
+            textViewSecond.setText("А теперь жми 'Далее'!");
         }else {
             textViewSecond.setText("Прикинь, кнопка теперь работает)))");
         }
-    }
 
-//    public void onNextActivity(View view){
-//        CharSequence text = textViewFirst.getText();
-//
-//        if (text == "Это только начало!") {
-//            textViewFirst.setText("Добро пожаловать!");
-//        }else {
-//            textViewFirst.setText("Это только начало!");
-//        }
-//
-//    }
+        Toast.makeText(
+                MainActivity.this, "Норм нажатие!)",
+                Toast.LENGTH_SHORT
+        ).show();
+    }
 
     public void addListenerOnButton() {
 
@@ -58,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Intent intent = new Intent(".SecondActivity");
                         startActivity(intent);
-                        finish();
+//                        finish();
                     }
                 }
         );

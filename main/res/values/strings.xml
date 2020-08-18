@@ -9,5 +9,6 @@
 
     <string name="title_activity_second">SecondActivity</string>
     <string name="exit_btn">Выход</string>
+    <string name="back_btn">Назад</string>
 
 </resources>
